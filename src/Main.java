@@ -41,4 +41,6 @@ public class Main {
         printArray(sumArr(arr, arr2), "Сумма маcсивов");
         printArray(multArr(arr, arr2), "Произведение маcсивов");
     }
+
+
 }
