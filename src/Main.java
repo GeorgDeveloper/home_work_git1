@@ -11,6 +11,18 @@ public class Main {
         return result;
     }
 
+    public static int[] multArr(int[] arrayOne, int[] arrayTwo) {
+        int[] result = new int[arrayOne.length];
+        if (arrayOne.length == arrayTwo.length) {
+            for (int i = 0; i < result.length; i++) {
+                result[i] = arrayOne[i] * arrayTwo[i];
+            }
+        } else {
+            throw new RuntimeException("Разная длина массивов!");
+        }
+        return result;
+    }
+
     public static void printArray(int[] arr, String nameF) {
         System.out.println(nameF +":");
         for (int i = 0; i < arr.length; i++) {
@@ -27,5 +39,6 @@ public class Main {
         printArray(arr2, "Массив 2");
 
         printArray(sumArr(arr, arr2), "Сумма маcсивов");
+        printArray(multArr(arr, arr2), "Произведение маcсивов");
     }
 }
