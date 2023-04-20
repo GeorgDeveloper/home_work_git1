@@ -55,6 +55,7 @@ public class Main {
 
         printArray(sumArr(arr, arr2), "Сумма маcсивов");
         printArray(multArr(arr, arr2), "Произведение маcсивов");
+        printArray(dividingArr(arr, arr2), "Деление маcсивов");
     }
 
 
