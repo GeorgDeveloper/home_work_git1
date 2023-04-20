@@ -11,6 +11,21 @@ public class Main {
         return result;
     }
 
+    public static int[] dividingArr(int[] arrayOne, int[] arrayTwo) {
+        int[] result = new int[arrayOne.length];
+        if (arrayOne.length == arrayTwo.length) {
+            for (int i = 0; i < result.length; i++) {
+                if (arrayTwo[i] != 0) {
+                    result[i] = arrayOne[i] / arrayTwo[i];
+                }
+                else result[i] = 0;
+            }
+        } else {
+            throw new RuntimeException("Разная длина массивов!");
+        }
+        return result;
+    }
+
     public static int[] multArr(int[] arrayOne, int[] arrayTwo) {
         int[] result = new int[arrayOne.length];
         if (arrayOne.length == arrayTwo.length) {
